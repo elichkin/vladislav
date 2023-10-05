@@ -1,0 +1,1 @@
+print('hi! my name is vladislav, i am a ui/ux graphic designer'.upper())
