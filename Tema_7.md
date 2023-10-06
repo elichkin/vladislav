@@ -73,3 +73,33 @@ with open('./txtfiles/Samost7_2.txt', 'r') as file:
 ## Выводы
 
 В данном задании, с помощью режима добавления внес новую ифнормацию. После с помощью режима чтения отобразил ранее введенную информацию.
+
+## Самостоятельная работа №3
+### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв латинского алфавита; число слов; число строк.
+
+```python
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z']
+with open('./txtfiles/Samost7_3.txt', 'r') as file:
+    lines = file.readlines()
+    count_letters = 0
+    count_words = 0
+
+    for line in lines:
+        for word in line.strip():
+            if word.lower() in alphabet:
+                count_letters += 1
+        count_words += len(line.split(' '))
+
+    print('Input file contains:')
+    print(f'{count_letters} letters')
+    print(f'{count_words} letters')
+    print(f'{len(lines)} lines')
+```
+
+### Результат.
+
+![Результат решения](./pic/Samost7_3.PNG)
+
+## Выводы
+
+В данном задании, я посчитал все слова (с помощью цикла), посчитал все буквы и с помощью функции `len()` посчитал количество строк. 
