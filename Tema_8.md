@@ -20,13 +20,13 @@
 ### Самостоятельно создайте класс и его объект. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class Phone:
-    def __init__(self, name, number):
+class Animal:
+    def __init__(self, name, weight):
         self.name = name
-        self.number = number
-my_phone = Phone('iPhone', 14)
-print(my_phone.name)
-print(my_phone.number)
+        self.weight = weight
+my_animal = Animal('Diper', 28)
+print(my_animal.name)
+print(my_animal.weight)
 ```
 
 ### Результат.
