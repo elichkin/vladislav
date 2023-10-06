@@ -42,6 +42,7 @@ one = 8; two = 7; three = 6
 print(one, two, three)
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_2.PNG)
 
 ## Выводы
@@ -55,6 +56,7 @@ print(one, two, three)
 print(int(input('Сколько месяцев длится лето: ')))
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_3.PNG)
 
 ## Выводы
@@ -69,6 +71,7 @@ str = "james"
 print(str, str, str, str, sep='')
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_4.PNG)
 
 ## Выводы
@@ -83,6 +86,7 @@ day = 24; month = 'сентября'; year = 2023
 print(f'Сегодня {day} {month} {year}. ', end='Всего хорошего!')
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_5.PNG)
 
 ## Выводы
@@ -97,6 +101,7 @@ phrase = 'Hello World'
 print(phrase.replace(" ", ' my '))
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_6.PNG)
 
 ## Вывод
@@ -110,6 +115,7 @@ print(phrase.replace(" ", ' my '))
 print(len('Hello World'))
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_7.PNG)
 
 ## Выводы
@@ -123,6 +129,7 @@ print(len('Hello World'))
 print('HELLO WORLD'.lower())
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_8.PNG)
 
 ## Выводы
@@ -138,6 +145,7 @@ one = 50; two = 100; three = 150
 print(three, two, one)
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_9.PNG)
 
 ## Выводы
@@ -152,6 +160,7 @@ print(three, two, one)
 print('hi! my name is vladislav, i am a ui/ux graphic designer'.upper())
 ```
 
+### Результат.
 ![Результат решения](./pic/Samost2_10.PNG)
 
 ## Выводы
