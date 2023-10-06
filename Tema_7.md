@@ -103,3 +103,32 @@ with open('./txtfiles/Samost7_3.txt', 'r') as file:
 ## Выводы
 
 В данном задании, я посчитал все слова (с помощью цикла), посчитал все буквы и с помощью функции `len()` посчитал количество строк. 
+
+## Самостоятельная работа №4
+### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в слове). Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле input.txt. Все слова в этом файле записаны в нижнем регистре. Программа должна заменить запрещенные слова, где бы они ни встречались, даже в середине другого слова. Замена производится независимо от регистра: если файл input.txt содержит запрещенное слово exam, то слова exam, Exam, ExaM, EXAM и exAm должны быть заменены на ****.
+
+```python
+example_1 = 'Hello, world! Python IS the programming language of thE future. My\nEMAIL is....\nPYTHON is awesome!!!!'
+
+with open('./txtfiles/Samost7_4.txt', 'r') as file:
+    words = file.read().split(' ')
+    lower_text = example_1.lower()
+    for word in words:
+        lower_text = lower_text.replace(word, '*' * len(word))
+    result = ''
+    for index, word in enumerate(lower_text):
+        if example_1[index].lower() == word:
+            result += example_1[index]
+        else:
+            result += word
+
+    print(result)
+```
+
+### Результат.
+
+![Результат решения](./pic/Samost7_4.PNG)
+
+## Выводы
+
+В данном задании, я преобразовал строку к нижнему регистру и заменил все необходимые слова из условия *. После восстановил регистр символов.
